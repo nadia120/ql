@@ -6,3 +6,4 @@ RUN apk add --no-cache --virtual .build-deps gcc musl-dev python2-dev python3-de
 RUN pip3 install pip setuptools --upgrade
 RUN pip3 install cryptography~=3.2.1
 RUN pip3 install dailycheckin --upgrade
+RUN pnpm install pako axios qs
